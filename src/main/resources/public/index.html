@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mancala Board Game by RD</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="Content">
+    <div class="Info">
+        <H1>Mancala Board Game</H1>
+    </div>
+    <div class="GameContainer">
+        <div id="nextPlayer" hidden="true">1</div>
+        <h2>Player 1</h2>
+        <div class="Board">
+            <div class="Mancala-left Pit" id="Pit1_14">0</div>
+            <div class="Pit P1" id="Pit1_13">6</div>
+            <div class="Pit P1" id="Pit1_12">6</div>
+            <div class="Pit P1" id="Pit1_11">6</div>
+            <div class="Pit P1" id="Pit1_10">6</div>
+            <div class="Pit P1" id="Pit1_9">6</div>
+            <div class="Pit P1" id="Pit1_8">6</div>
+            <div class="Mancala-right Pit" id="Pit1_7">0</div>
+            <div class="Pit P2" id="Pit1_1" onclick="move(this, 1, 2)">6</div>
+            <div class="Pit P2" id="Pit1_2" onclick="move(this, 1, 2)">6</div>
+            <div class="Pit P2" id="Pit1_3" onclick="move(this, 1, 2)">6</div>
+            <div class="Pit P2" id="Pit1_4" onclick="move(this, 1, 2)">6</div>
+            <div class="Pit P2" id="Pit1_5" onclick="move(this, 1, 2)">6</div>
+            <div class="Pit P2" id="Pit1_6" onclick="move(this, 1, 2)">6</div>
+        </div>
+        <h2>Player 2</h2>
+        <div class="Board">
+            <div class="Mancala-left Pit" id="Pit2_14">0</div>
+            <div class="Pit P2" id="Pit2_13">6</div>
+            <div class="Pit P2" id="Pit2_12">6</div>
+            <div class="Pit P2" id="Pit2_11">6</div>
+            <div class="Pit P2" id="Pit2_10">6</div>
+            <div class="Pit P2" id="Pit2_9">6</div>
+            <div class="Pit P2" id="Pit2_8">6</div>
+            <div class="Mancala-right Pit" id="Pit2_7">0</div>
+            <div class="Pit P1" id="Pit2_1" onclick="move(this, 2, 1)">6</div>
+            <div class="Pit P1" id="Pit2_2" onclick="move(this, 2, 1)">6</div>
+            <div class="Pit P1" id="Pit2_3" onclick="move(this, 2, 1)">6</div>
+            <div class="Pit P1" id="Pit2_4" onclick="move(this, 2, 1)">6</div>
+            <div class="Pit P1" id="Pit2_5" onclick="move(this, 2, 1)">6</div>
+            <div class="Pit P1" id="Pit2_6" onclick="move(this, 2, 1)">6</div>
+        </div>
+
+        <input type="button"id="but" value="Start a new game" onclick="startNewGame()">
+
+    </div>
+</body>
+</html>
